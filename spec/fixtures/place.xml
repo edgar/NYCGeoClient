@@ -1,0 +1,177 @@
+<geosupportResponse>
+  <place>
+    <assemblyDistrict>75</assemblyDistrict>
+    <bbl>1008350041</bbl>
+    <bblBoroughCode>1</bblBoroughCode>
+    <bblTaxBlock>00835</bblTaxBlock>
+    <bblTaxLot>0041</bblTaxLot>
+    <boardOfElectionsPreferredLgc>1</boardOfElectionsPreferredLgc>
+    <boePreferredStreetName>EMPIRE STATE BUILDING</boePreferredStreetName>
+    <boePreferredstreetCode>12032001</boePreferredstreetCode>
+    <boroughCode1In>1</boroughCode1In>
+    <buildingIdentificationNumber>1015862</buildingIdentificationNumber>
+    <businessImprovementDistrict>113090</businessImprovementDistrict>
+    <censusBlock2000>1001</censusBlock2000>
+    <censusBlock2010>1001</censusBlock2010>
+    <censusTract1990>  76  </censusTract1990>
+    <censusTract2000>  76  </censusTract2000>
+    <censusTract2010>  76  </censusTract2010>
+    <cityCouncilDistrict>04</cityCouncilDistrict>
+    <civilCourtDistrict>09</civilCourtDistrict>
+    <coincidentSegmentCount>1</coincidentSegmentCount>
+    <communityDistrict>105</communityDistrict>
+    <communityDistrictBoroughCode>1</communityDistrictBoroughCode>
+    <communityDistrictNumber>05</communityDistrictNumber>
+    <communitySchoolDistrict>02</communitySchoolDistrict>
+    <condominiumBillingBbl>0000000000</condominiumBillingBbl>
+    <congressionalDistrict>12</congressionalDistrict>
+    <cooperativeIdNumber>0000</cooperativeIdNumber>
+    <cornerCode>CR</cornerCode>
+    <crossStreetNamesFlagIn>E</crossStreetNamesFlagIn>
+    <dcpCommercialStudyArea>11021</dcpCommercialStudyArea>
+    <dcpPreferredLgc>01</dcpPreferredLgc>
+    <dotStreetLightContractorArea>1</dotStreetLightContractorArea>
+    <dynamicBlock>110</dynamicBlock>
+    <electionDistrict>050</electionDistrict>
+    <fireBattalion>07</fireBattalion>
+    <fireCompanyNumber>024</fireCompanyNumber>
+    <fireCompanyType>L</fireCompanyType>
+    <fireDivision>01</fireDivision>
+    <firstBoroughName>MANHATTAN</firstBoroughName>
+    <firstStreetCode>12032001020</firstStreetCode>
+    <firstStreetNameNormalized>EMPIRE STATE BUILDING</firstStreetNameNormalized>
+    <fromLionNodeId>0021443</fromLionNodeId>
+    <fromPreferredLgcsFirstSetOf5>0101</fromPreferredLgcsFirstSetOf5>
+    <genericId>0001703</genericId>
+    <geosupportFunctionCode>1B</geosupportFunctionCode>
+    <geosupportReturnCode>01</geosupportReturnCode>
+    <geosupportReturnCode2>00</geosupportReturnCode2>
+    <gi5DigitStreetCode1>20320</gi5DigitStreetCode1>
+    <gi5DigitStreetCode2>10410</gi5DigitStreetCode2>
+    <gi5DigitStreetCode3>34430</gi5DigitStreetCode3>
+    <gi5DigitStreetCode4>34450</gi5DigitStreetCode4>
+    <giBoroughCode1>1</giBoroughCode1>
+    <giBoroughCode2>1</giBoroughCode2>
+    <giBoroughCode3>1</giBoroughCode3>
+    <giBoroughCode4>1</giBoroughCode4>
+    <giBuildingIdentificationNumber1>1015862</giBuildingIdentificationNumber1>
+    <giBuildingIdentificationNumber2>1015862</giBuildingIdentificationNumber2>
+    <giBuildingIdentificationNumber3>1015862</giBuildingIdentificationNumber3>
+    <giBuildingIdentificationNumber4>1015862</giBuildingIdentificationNumber4>
+    <giDcpPreferredLgc1>01</giDcpPreferredLgc1>
+    <giDcpPreferredLgc2>01</giDcpPreferredLgc2>
+    <giDcpPreferredLgc3>01</giDcpPreferredLgc3>
+    <giDcpPreferredLgc4>01</giDcpPreferredLgc4>
+    <giGeographicIdentifier1>N</giGeographicIdentifier1>
+    <giHighHouseNumber2>350</giHighHouseNumber2>
+    <giHighHouseNumber3>31</giHighHouseNumber3>
+    <giHighHouseNumber4>20</giHighHouseNumber4>
+    <giLowHouseNumber2>338</giLowHouseNumber2>
+    <giLowHouseNumber3>1</giLowHouseNumber3>
+    <giLowHouseNumber4>2</giLowHouseNumber4>
+    <giSideOfStreetIndicator1>L</giSideOfStreetIndicator1>
+    <giSideOfStreetIndicator2>L</giSideOfStreetIndicator2>
+    <giSideOfStreetIndicator3>R</giSideOfStreetIndicator3>
+    <giSideOfStreetIndicator4>L</giSideOfStreetIndicator4>
+    <giStreetCode1>12032001</giStreetCode1>
+    <giStreetCode2>11041001</giStreetCode2>
+    <giStreetCode3>13443001</giStreetCode3>
+    <giStreetCode4>13445001</giStreetCode4>
+    <giStreetName1>EMPIRE STATE BUILDING</giStreetName1>
+    <giStreetName2>5 AVENUE</giStreetName2>
+    <giStreetName3>WEST   33 STREET</giStreetName3>
+    <giStreetName4>WEST   34 STREET</giStreetName4>
+    <healthArea>5200</healthArea>
+    <healthCenterDistrict>15</healthCenterDistrict>
+    <highBblOfThisBuildingsCondominiumUnits>1008350041</highBblOfThisBuildingsCondominiumUnits>
+    <highCrossStreetB5SC1>117670</highCrossStreetB5SC1>
+    <highCrossStreetB5SC2>134450</highCrossStreetB5SC2>
+    <highCrossStreetCode1>11767001</highCrossStreetCode1>
+    <highCrossStreetCode2>134450</highCrossStreetCode2>
+    <highCrossStreetName1>EAST   34 STREET</highCrossStreetName1>
+    <highCrossStreetName2>WEST   34 STREET</highCrossStreetName2>
+    <highHouseNumberOfBlockfaceSortFormat>000000000AA</highHouseNumberOfBlockfaceSortFormat>
+    <interimAssistanceEligibilityIndicator>I</interimAssistanceEligibilityIndicator>
+    <internalLabelXCoordinate>0988196</internalLabelXCoordinate>
+    <internalLabelYCoordinate>0211970</internalLabelYCoordinate>
+    <latitude>40.74845413267184</latitude>
+    <latitudeInternalLabel>40.748484328923226</latitudeInternalLabel>
+    <legacySegmentId>0034023</legacySegmentId>
+    <lionBoroughCode>1</lionBoroughCode>
+    <lionBoroughCodeForVanityAddress>1</lionBoroughCodeForVanityAddress>
+    <lionFaceCode>2470</lionFaceCode>
+    <lionFaceCodeForVanityAddress>2470</lionFaceCodeForVanityAddress>
+    <lionKey>1247001150</lionKey>
+    <lionKeyForVanityAddress>1247001150</lionKeyForVanityAddress>
+    <lionSequenceNumber>01150</lionSequenceNumber>
+    <lionSequenceNumberForVanityAddress>01150</lionSequenceNumberForVanityAddress>
+    <listOf4Lgcs>01</listOf4Lgcs>
+    <longitude>-73.98572610791724</longitude>
+    <longitudeInternalLabel>-73.98575858313839</longitudeInternalLabel>
+    <lowBblOfThisBuildingsCondominiumUnits>1008350041</lowBblOfThisBuildingsCondominiumUnits>
+    <lowCrossStreetB5SC1>117650</lowCrossStreetB5SC1>
+    <lowCrossStreetB5SC2>134430</lowCrossStreetB5SC2>
+    <lowCrossStreetCode1>11765001</lowCrossStreetCode1>
+    <lowCrossStreetCode2>13443001</lowCrossStreetCode2>
+    <lowCrossStreetName1>EAST   33 STREET</lowCrossStreetName1>
+    <lowCrossStreetName2>WEST   33 STREET</lowCrossStreetName2>
+    <lowHouseNumberOfBlockfaceSortFormat>000000000AA</lowHouseNumberOfBlockfaceSortFormat>
+    <lowHouseNumberOfDefiningAddressRange>000001000AA</lowHouseNumberOfDefiningAddressRange>
+    <message>350 5 AVENUE IS THE UNDERLYING ADDRESS OF EMPIRE STATE BUILDING</message>
+    <nta>MN17</nta>
+    <ntaName>Midtown-Midtown South</ntaName>
+    <numberOfCrossStreetB5SCsHighAddressEnd>3</numberOfCrossStreetB5SCsHighAddressEnd>
+    <numberOfCrossStreetB5SCsLowAddressEnd>2</numberOfCrossStreetB5SCsLowAddressEnd>
+    <numberOfCrossStreetsHighAddressEnd>2</numberOfCrossStreetsHighAddressEnd>
+    <numberOfCrossStreetsLowAddressEnd>2</numberOfCrossStreetsLowAddressEnd>
+    <numberOfEntriesInListOfGeographicIdentifiers>0004</numberOfEntriesInListOfGeographicIdentifiers>
+    <numberOfExistingStructuresOnLot>0001</numberOfExistingStructuresOnLot>
+    <numberOfStreetFrontagesOfLot>03</numberOfStreetFrontagesOfLot>
+    <physicalId>0001934</physicalId>
+    <policePatrolBoroughCommand>1</policePatrolBoroughCommand>
+    <policePrecinct>014</policePrecinct>
+    <reasonCode>V</reasonCode>
+    <reasonCode1e>V</reasonCode1e>
+    <returnCode1a>00</returnCode1a>
+    <returnCode1e>01</returnCode1e>
+    <roadwayType>1</roadwayType>
+    <rpadBuildingClassificationCode>O4</rpadBuildingClassificationCode>
+    <rpadSelfCheckCodeForBbl>3</rpadSelfCheckCodeForBbl>
+    <sanbornBoroughCode>1</sanbornBoroughCode>
+    <sanbornPageNumber>016</sanbornPageNumber>
+    <sanbornVolumeNumber>04</sanbornVolumeNumber>
+    <sanitationCollectionSchedulingSectionAndSubsection>1A</sanitationCollectionSchedulingSectionAndSubsection>
+    <sanitationDistrict>105</sanitationDistrict>
+    <sanitationRecyclingCollectionSchedule>EF</sanitationRecyclingCollectionSchedule>
+    <sanitationRegularCollectionSchedule>MWF</sanitationRegularCollectionSchedule>
+    <sanitationSnowPriorityCode>P</sanitationSnowPriorityCode>
+    <segmentAzimuth>061</segmentAzimuth>
+    <segmentIdentifier>0034023</segmentIdentifier>
+    <segmentLengthInFeet>00277</segmentLengthInFeet>
+    <segmentOrientation>N</segmentOrientation>
+    <segmentTypeCode>U</segmentTypeCode>
+    <sideOfStreetIndicator>L</sideOfStreetIndicator>
+    <sideOfStreetOfVanityAddress>L</sideOfStreetOfVanityAddress>
+    <specialAddressGeneratedRecordFlag>N</specialAddressGeneratedRecordFlag>
+    <splitLowHouseNumber>000001000AA</splitLowHouseNumber>
+    <stateSenatorialDistrict>27</stateSenatorialDistrict>
+    <streetName1In>EMPIRE STATE BUILDING</streetName1In>
+    <streetStatus>2</streetStatus>
+    <taxMapNumberSectionAndVolume>10306</taxMapNumberSectionAndVolume>
+    <toLionNodeId>0021445</toLionNodeId>
+    <toPreferredLgcsFirstSetOf5>01</toPreferredLgcsFirstSetOf5>
+    <trafficDirection>A</trafficDirection>
+    <underlyingHnsOnTrueStreet>000350000AA</underlyingHnsOnTrueStreet>
+    <underlyingStreetCode>11041001</underlyingStreetCode>
+    <workAreaFormatIndicatorIn>C</workAreaFormatIndicatorIn>
+    <xCoordinate>0988205</xCoordinate>
+    <xCoordinateHighAddressEnd>0988528</xCoordinateHighAddressEnd>
+    <xCoordinateLowAddressEnd>0988394</xCoordinateLowAddressEnd>
+    <xCoordinateOfCenterofCurvature>0000000</xCoordinateOfCenterofCurvature>
+    <yCoordinate>0211959</yCoordinate>
+    <yCoordinateHighAddressEnd>0211953</yCoordinateHighAddressEnd>
+    <yCoordinateLowAddressEnd>0211711</yCoordinateLowAddressEnd>
+    <yCoordinateOfCenterofCurvature>0000000</yCoordinateOfCenterofCurvature>
+    <zipCode>10018</zipCode>
+  </place>
+</geosupportResponse>
