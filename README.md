@@ -1,4 +1,4 @@
-# NYCGeoClient [![Build Status](https://travis-ci.org/edgar/NYCGeoClient.png)](https://travis-ci.org/edgar/NYCGeoClient)
+# NYCGeoClient [![Build Status](https://travis-ci.org/edgar/NYCGeoClient.png?branch=master)](https://travis-ci.org/edgar/NYCGeoClient)
 A ruby gem for the NYC GeoClient API - https://developer.cityofnewyork.us/api/geoclient-api-beta
 
 ## Installation
