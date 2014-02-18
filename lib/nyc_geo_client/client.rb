@@ -5,5 +5,6 @@ module NYCGeoClient
 
     include NYCGeoClient::Client::Address
     include NYCGeoClient::Client::BBL
+    include NYCGeoClient::Client::BIN
   end
 end
