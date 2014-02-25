@@ -50,10 +50,10 @@ module NYCGeoClient
     end
 
     def access_params
-      {
-        :app_id => app_id,
-        :app_key => app_key
-      }
+      hash = {}
+      hash[:app_id] = app_id if app_id
+      hash[:app_key] = app_key if app_key
+      hash
     end
   end
 end
