@@ -1,0 +1,99 @@
+<geosupportResponse>
+  <blockface>
+    <boroughCode1In>1</boroughCode1In>
+    <coincidentSegmentCount>1</coincidentSegmentCount>
+    <compassDirectionIn>N</compassDirectionIn>
+    <crossStreetNamesFlagIn>E</crossStreetNamesFlagIn>
+    <dcpPreferredLgcForStreet1>01</dcpPreferredLgcForStreet1>
+    <dcpPreferredLgcForStreet2>01</dcpPreferredLgcForStreet2>
+    <dcpPreferredLgcForStreet3>01</dcpPreferredLgcForStreet3>
+    <dotStreetLightContractorArea>1</dotStreetLightContractorArea>
+    <firstBoroughName>MANHATTAN</firstBoroughName>
+    <firstStreetCode>13445001010</firstStreetCode>
+    <firstStreetNameNormalized>WEST   34 STREET</firstStreetNameNormalized>
+    <fromNode>0021445</fromNode>
+    <geosupportFunctionCode>3</geosupportFunctionCode>
+    <geosupportReturnCode>01</geosupportReturnCode>
+    <highCrossStreetB5SC1>110510</highCrossStreetB5SC1>
+    <leftSegment1990CensusTract>  76  </leftSegment1990CensusTract>
+    <leftSegment2000CensusBlock>1001</leftSegment2000CensusBlock>
+    <leftSegment2000CensusTract>  76  </leftSegment2000CensusTract>
+    <leftSegment2010CensusBlock>1001</leftSegment2010CensusBlock>
+    <leftSegment2010CensusTract>  76  </leftSegment2010CensusTract>
+    <leftSegmentAssemblyDistrict>75</leftSegmentAssemblyDistrict>
+    <leftSegmentCommunityDistrict>105</leftSegmentCommunityDistrict>
+    <leftSegmentCommunityDistrictBoroughCode>1</leftSegmentCommunityDistrictBoroughCode>
+    <leftSegmentCommunityDistrictNumber>05</leftSegmentCommunityDistrictNumber>
+    <leftSegmentCommunitySchoolDistrict>02</leftSegmentCommunitySchoolDistrict>
+    <leftSegmentDynamicBlock>110</leftSegmentDynamicBlock>
+    <leftSegmentElectionDistrict>050</leftSegmentElectionDistrict>
+    <leftSegmentFireBattalion>07</leftSegmentFireBattalion>
+    <leftSegmentFireCompanyNumber>024</leftSegmentFireCompanyNumber>
+    <leftSegmentFireCompanyType>L</leftSegmentFireCompanyType>
+    <leftSegmentFireDivision>01</leftSegmentFireDivision>
+    <leftSegmentHealthArea>5200</leftSegmentHealthArea>
+    <leftSegmentHighHouseNumber>0000098</leftSegmentHighHouseNumber>
+    <leftSegmentInterimAssistanceEligibilityIndicator>I</leftSegmentInterimAssistanceEligibilityIndicator>
+    <leftSegmentLowHouseNumber>0000002</leftSegmentLowHouseNumber>
+    <leftSegmentNta>MN17</leftSegmentNta>
+    <leftSegmentPolicePatrolBoroughCommand>1</leftSegmentPolicePatrolBoroughCommand>
+    <leftSegmentPolicePrecinct>014</leftSegmentPolicePrecinct>
+    <leftSegmentZipCode>10001</leftSegmentZipCode>
+    <lengthOfSegmentInFeet>01016</lengthOfSegmentInFeet>
+    <lionBoroughCode>1</lionBoroughCode>
+    <lionFaceCode>4935</lionFaceCode>
+    <lionKey>1493502010</lionKey>
+    <lionSequenceNumber>02010</lionSequenceNumber>
+    <lowCrossStreetB5SC1>110410</lowCrossStreetB5SC1>
+    <lowCrossStreetB5SC2>117670</lowCrossStreetB5SC2>
+    <message>THESE STREETS INTERSECT ONCE-COMPASS DIRECTION IGNORED</message>
+    <numberOfCrossStreetB5SCsHighAddressEnd>1</numberOfCrossStreetB5SCsHighAddressEnd>
+    <numberOfCrossStreetB5SCsLowAddressEnd>2</numberOfCrossStreetB5SCsLowAddressEnd>
+    <numberOfStreetCodesAndNamesInList>03</numberOfStreetCodesAndNamesInList>
+    <reasonCode>H</reasonCode>
+    <rightSegment1990CensusTract>  76  </rightSegment1990CensusTract>
+    <rightSegment2000CensusBlock>1000</rightSegment2000CensusBlock>
+    <rightSegment2000CensusTract>  76  </rightSegment2000CensusTract>
+    <rightSegment2010CensusBlock>1000</rightSegment2010CensusBlock>
+    <rightSegment2010CensusTract>  76  </rightSegment2010CensusTract>
+    <rightSegmentAssemblyDistrict>75</rightSegmentAssemblyDistrict>
+    <rightSegmentCommunityDistrict>105</rightSegmentCommunityDistrict>
+    <rightSegmentCommunityDistrictBoroughCode>1</rightSegmentCommunityDistrictBoroughCode>
+    <rightSegmentCommunityDistrictNumber>05</rightSegmentCommunityDistrictNumber>
+    <rightSegmentCommunitySchoolDistrict>02</rightSegmentCommunitySchoolDistrict>
+    <rightSegmentDynamicBlock>101</rightSegmentDynamicBlock>
+    <rightSegmentElectionDistrict>058</rightSegmentElectionDistrict>
+    <rightSegmentFireBattalion>08</rightSegmentFireBattalion>
+    <rightSegmentFireCompanyNumber>065</rightSegmentFireCompanyNumber>
+    <rightSegmentFireCompanyType>E</rightSegmentFireCompanyType>
+    <rightSegmentFireDivision>03</rightSegmentFireDivision>
+    <rightSegmentHealthArea>5200</rightSegmentHealthArea>
+    <rightSegmentHighHouseNumber>0000099</rightSegmentHighHouseNumber>
+    <rightSegmentInterimAssistanceEligibilityIndicator>I</rightSegmentInterimAssistanceEligibilityIndicator>
+    <rightSegmentLowHouseNumber>0000001</rightSegmentLowHouseNumber>
+    <rightSegmentNta>MN17</rightSegmentNta>
+    <rightSegmentPolicePatrolBoroughCommand>1</rightSegmentPolicePatrolBoroughCommand>
+    <rightSegmentPolicePrecinct>014</rightSegmentPolicePrecinct>
+    <rightSegmentZipCode>10001</rightSegmentZipCode>
+    <sanitationSnowPriorityCode>P</sanitationSnowPriorityCode>
+    <secondStreetCode>11041001020</secondStreetCode>
+    <secondStreetNameNormalized>FIFTH AVENUE</secondStreetNameNormalized>
+    <segmentAzimuth>151</segmentAzimuth>
+    <segmentIdentifier>0034027</segmentIdentifier>
+    <segmentOrientation>W</segmentOrientation>
+    <segmentTypeCode>U</segmentTypeCode>
+    <streetCode1>11041001</streetCode1>
+    <streetCode2>11767001</streetCode2>
+    <streetCode6>11051001</streetCode6>
+    <streetName1>FIFTH AVENUE</streetName1>
+    <streetName1In>34 ST</streetName1In>
+    <streetName2>EAST   34 STREET</streetName2>
+    <streetName2In>FIFTH AVE</streetName2In>
+    <streetName3In>SIXTH AVE</streetName3In>
+    <streetName6>SIXTH AVENUE</streetName6>
+    <thirdStreetCode>11051001040</thirdStreetCode>
+    <thirdStreetNameNormalized>SIXTH AVENUE</thirdStreetNameNormalized>
+    <toNode>0021392</toNode>
+    <workAreaFormatIndicatorIn>C</workAreaFormatIndicatorIn>
+  </blockface>
+</geosupportResponse>
