@@ -1,0 +1,69 @@
+<geosupportResponse>
+  <intersection>
+    <assemblyDistrict>75</assemblyDistrict>
+    <boroughCode1In>1</boroughCode1In>
+    <censusTract1990>  74  </censusTract1990>
+    <censusTract2000>  74  </censusTract2000>
+    <censusTract2010>  74  </censusTract2010>
+    <cityCouncilDistrict>03</cityCouncilDistrict>
+    <civilCourtDistrict>09</civilCourtDistrict>
+    <communityDistrict>105</communityDistrict>
+    <communityDistrictBoroughCode>1</communityDistrictBoroughCode>
+    <communityDistrictNumber>05</communityDistrictNumber>
+    <communitySchoolDistrict>02</communitySchoolDistrict>
+    <compassDirectionIn>N</compassDirectionIn>
+    <congressionalDistrict>12</congressionalDistrict>
+    <crossStreetNamesFlagIn>E</crossStreetNamesFlagIn>
+    <dcpPreferredLgcForStreet1>01</dcpPreferredLgcForStreet1>
+    <dcpPreferredLgcForStreet2>01</dcpPreferredLgcForStreet2>
+    <dotStreetLightContractorArea>1</dotStreetLightContractorArea>
+    <fireBattalion>08</fireBattalion>
+    <fireCompanyNumber>065</fireCompanyNumber>
+    <fireCompanyType>E</fireCompanyType>
+    <fireDivision>03</fireDivision>
+    <firstBoroughName>MANHATTAN</firstBoroughName>
+    <firstStreetCode>11767001010</firstStreetCode>
+    <firstStreetNameNormalized>EAST   34 STREET</firstStreetNameNormalized>
+    <geosupportFunctionCode>2</geosupportFunctionCode>
+    <geosupportReturnCode>01</geosupportReturnCode>
+    <healthArea>5200</healthArea>
+    <healthCenterDistrict>15</healthCenterDistrict>
+    <interimAssistanceEligibilityIndicator>I</interimAssistanceEligibilityIndicator>
+    <intersectingStreet1>110410</intersectingStreet1>
+    <intersectingStreet2>117670</intersectingStreet2>
+    <intersectingStreet3>134450</intersectingStreet3>
+    <latitude>40.748437513820136</latitude>
+    <lionNodeNumber>0021445</lionNodeNumber>
+    <listOfPairsOfLevelCodes>M MMM</listOfPairsOfLevelCodes>
+    <longitude>-73.98456038049486</longitude>
+    <message>THESE STREETS INTERSECT ONCE-COMPASS DIRECTION IGNORED</message>
+    <numberOfIntersectingStreets>3</numberOfIntersectingStreets>
+    <numberOfStreetCodesAndNamesInList>03</numberOfStreetCodesAndNamesInList>
+    <policePatrolBoroughCommand>1</policePatrolBoroughCommand>
+    <policePrecinct>014</policePrecinct>
+    <reasonCode>H</reasonCode>
+    <sanbornBoroughCode1>1</sanbornBoroughCode1>
+    <sanbornBoroughCode2>1</sanbornBoroughCode2>
+    <sanbornPageNumber1>029</sanbornPageNumber1>
+    <sanbornPageNumber2>018</sanbornPageNumber2>
+    <sanbornVolumeNumber1>04</sanbornVolumeNumber1>
+    <sanbornVolumeNumber2>04</sanbornVolumeNumber2>
+    <sanitationCollectionSchedulingSectionAndSubsection>2B</sanitationCollectionSchedulingSectionAndSubsection>
+    <sanitationDistrict>105</sanitationDistrict>
+    <secondStreetCode>11041001020</secondStreetCode>
+    <secondStreetNameNormalized>FIFTH AVENUE</secondStreetNameNormalized>
+    <stateSenatorialDistrict>27</stateSenatorialDistrict>
+    <streetCode1>11041001</streetCode1>
+    <streetCode2>11767001</streetCode2>
+    <streetCode3>13445001</streetCode3>
+    <streetName1>FIFTH AVENUE</streetName1>
+    <streetName1In>34 ST</streetName1In>
+    <streetName2>EAST   34 STREET</streetName2>
+    <streetName2In>FIFTH AVE</streetName2In>
+    <streetName3>WEST   34 STREET</streetName3>
+    <workAreaFormatIndicatorIn>C</workAreaFormatIndicatorIn>
+    <xCoordinate>0988528</xCoordinate>
+    <yCoordinate>0211953</yCoordinate>
+    <zipCode>10016</zipCode>
+  </intersection>
+</geosupportResponse>
