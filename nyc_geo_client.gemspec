@@ -22,7 +22,7 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.summary       = %q{A ruby wrapper for NYCGeoClient API}
-  gem.name          = "NYCGeoClient"
+  gem.name          = "nyc_geo_client"
   gem.require_paths = ["lib"]
   gem.version       = NYCGeoClient::VERSION.dup
 end
