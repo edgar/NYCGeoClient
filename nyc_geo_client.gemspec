@@ -3,16 +3,16 @@ require File.expand_path('../lib/nyc_geo_client/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake'
-  gem.add_development_dependency('rspec', '~> 2.14.1')
-  gem.add_development_dependency('webmock', '~> 1.17.1')
-  gem.add_development_dependency('yard', '~> 0.8.7.3')
+  gem.add_development_dependency('rspec', '~> 3.4.0')
+  gem.add_development_dependency('webmock', '~> 2.0.2')
+  gem.add_development_dependency('yard', '~> 0.8.7.6')
   gem.add_development_dependency('bluecloth', '~> 2.2.0')
 
-  gem.add_runtime_dependency('faraday', '~> 0.8.8')
-  gem.add_runtime_dependency('faraday_middleware', '~> 0.9.0')
-  gem.add_runtime_dependency('multi_json', '~> 1.8.4')
+  gem.add_runtime_dependency('faraday', '~> 0.9.2')
+  gem.add_runtime_dependency('faraday_middleware', '~> 0.10.0')
+  gem.add_runtime_dependency('multi_json', '~> 1.12.0')
   gem.add_runtime_dependency('multi_xml', '~> 0.5.5')
-  gem.add_runtime_dependency('hashie',  '~> 2.0.5')
+  gem.add_runtime_dependency('hashie',  '~> 3.4.4')
   gem.authors       = ["Edgar Gonzalez"]
   gem.email         = ["edgargonzalez@gmail.com"]
   gem.description   = %q{A ruby wrapper for NYCGeoClient API}
