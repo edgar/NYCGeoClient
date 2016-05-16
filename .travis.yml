@@ -10,5 +10,6 @@ rvm:
   - 2.3.1
   - ruby-head
 before_install:
+  # need this for ruby 1.9.3 and rspec
   - gem update --system
   - gem update bundler

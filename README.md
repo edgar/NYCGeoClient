@@ -71,6 +71,15 @@ For instance:
     client = NYCGeoClient.client(adapter: :typhoeus, user_agent: "foobar v1", debug: true, app_id: 'foo', app_key: 'bar')
     client.address('13','crosby','manhattan')
 
+## Ruby versions supported
+
+* 1.9.3
+* 2.0.0
+* 2.1.0
+* 2.2.5
+* 2.3.1
+
+Check the [travis.yml](travis.yml) to see the current supported ruby versions.
 
 ## Contributing
 
