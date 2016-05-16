@@ -1,4 +1,4 @@
-# NYCGeoClient [![Build Status](https://travis-ci.org/edgar/NYCGeoClient.png?branch=master)](https://travis-ci.org/edgar/NYCGeoClient)
+# NYCGeoClient [![Build Status](https://travis-ci.org/edgar/NYCGeoClient.png?branch=master)](https://travis-ci.org/edgar/NYCGeoClient)[![Gem Version](https://badge.fury.io/rb/nyc_geo_client.svg)](http://badge.fury.io/rb/nyc_geo_client)
 A ruby gem for the NYC GeoClient API - https://developer.cityofnewyork.us/api/geoclient-api
 
 ## Installation
@@ -79,7 +79,7 @@ For instance:
 * 2.2.5
 * 2.3.1
 
-Check the [travis.yml](travis.yml) to see the current supported ruby versions.
+Check the [travis.yml](.travis.yml) to see the current supported ruby versions.
 
 ## Contributing
 
