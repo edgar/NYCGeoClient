@@ -23,17 +23,17 @@ describe NYCGeoClient::Client do
 
         it "should get the correct resource" do
           @client.bin('1003041')
-          a_get("bin.#{format}").
+          expect(a_get("bin.#{format}").
             with(query: {
               app_id:  @client.app_id,
               app_key: @client.app_key,
               bin:     '1003041',
-            }).should have_been_made
+            })).to have_been_made
         end
 
         it "should return the bin info" do
           data = @client.bin('1003041')
-          data.keys.should be == ["bin"]
+          expect(data.keys).to eq ["bin"]
         end
       end
     end

@@ -20,75 +20,75 @@ describe NYCGeoClient do
 
     it "should get the correct resource" do
       NYCGeoClient.address('13', 'crosby', 'manhattan')
-      a_get("address.json").
+      expect(a_get("address.json").
         with(query: {
           houseNumber: '13',
           street: 'crosby',
           borough: 'manhattan'
-        }).should have_been_made
+        })).to have_been_made
     end
 
      it "should return the same results as a client" do
-       NYCGeoClient.address('13', 'crosby', 'manhattan').should == NYCGeoClient::Client.new.address('13', 'crosby', 'manhattan')
+       expect(NYCGeoClient.address('13', 'crosby', 'manhattan')).to eq NYCGeoClient::Client.new.address('13', 'crosby', 'manhattan')
      end
 
    end
 
   describe ".client" do
     it "should be a NYCGeoClient::Client" do
-      NYCGeoClient.client.should be_a NYCGeoClient::Client
+      expect(NYCGeoClient.client).to be_a NYCGeoClient::Client
     end
   end
 
   describe ".adapter" do
     it "should return the default adapter" do
-      NYCGeoClient.adapter.should == NYCGeoClient::Configuration::DEFAULT_ADAPTER
+      expect(NYCGeoClient.adapter).to eq NYCGeoClient::Configuration::DEFAULT_ADAPTER
     end
   end
 
   describe ".adapter=" do
     it "should set the adapter" do
       NYCGeoClient.adapter = :typhoeus
-      NYCGeoClient.adapter.should == :typhoeus
+      expect(NYCGeoClient.adapter).to eq :typhoeus
     end
   end
 
   describe ".endpoint" do
     it "should return the default endpoint" do
-      NYCGeoClient.endpoint.should == NYCGeoClient::Configuration::DEFAULT_ENDPOINT
+      expect(NYCGeoClient.endpoint).to eq NYCGeoClient::Configuration::DEFAULT_ENDPOINT
     end
   end
 
   describe ".endpoint=" do
     it "should set the endpoint" do
       NYCGeoClient.endpoint = 'http://tumblr.com'
-      NYCGeoClient.endpoint.should == 'http://tumblr.com'
+      expect(NYCGeoClient.endpoint).to eq 'http://tumblr.com'
     end
   end
 
   describe ".format" do
     it "should return the default format" do
-      NYCGeoClient.format.should == NYCGeoClient::Configuration::DEFAULT_FORMAT
+      expect(NYCGeoClient.format).to eq NYCGeoClient::Configuration::DEFAULT_FORMAT
     end
   end
 
   describe ".format=" do
     it "should set the format" do
       NYCGeoClient.format = 'xml'
-      NYCGeoClient.format.should == 'xml'
+      expect(NYCGeoClient.format).to eq 'xml'
     end
   end
 
   describe ".user_agent" do
     it "should return the default user agent" do
-      NYCGeoClient.user_agent.should == NYCGeoClient::Configuration::DEFAULT_USER_AGENT
+      expect(NYCGeoClient.user_agent).to eq NYCGeoClient::Configuration::DEFAULT_USER_AGENT
     end
   end
 
   describe ".user_agent=" do
     it "should set the user_agent" do
       NYCGeoClient.user_agent = 'Custom User Agent'
-      NYCGeoClient.user_agent.should == 'Custom User Agent'
+      expect(NYCGeoClient.user_agent).to eq 'Custom User Agent'
     end
   end
 
@@ -99,7 +99,7 @@ describe NYCGeoClient do
       it "should set the #{key}" do
         NYCGeoClient.configure do |config|
           config.send("#{key}=", key)
-          NYCGeoClient.send(key).should == key
+          expect(NYCGeoClient.send(key)).to eq key
         end
       end
     end

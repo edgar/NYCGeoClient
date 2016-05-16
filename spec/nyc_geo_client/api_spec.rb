@@ -22,7 +22,7 @@ describe NYCGeoClient::API do
     it "should inherit module configuration" do
       api = NYCGeoClient::API.new
       @keys.each do |key|
-        api.send(key).should == key
+        expect(api.send(key)).to eq key
       end
     end
 
@@ -46,7 +46,7 @@ describe NYCGeoClient::API do
         it "should override module configuration" do
           api = NYCGeoClient::API.new(@configuration)
           @keys.each do |key|
-            api.send(key).should == @configuration[key]
+            expect(api.send(key)).to eq @configuration[key]
           end
         end
 
@@ -58,7 +58,7 @@ describe NYCGeoClient::API do
             api.send("#{key}=", value)
           end
           @keys.each do |key|
-            api.send(key).should == @configuration[key]
+            expect(api.send(key)).to eq @configuration[key]
           end
         end
       end

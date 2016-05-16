@@ -21,21 +21,20 @@ describe Faraday::Response do
       end
 
       it "should raise a NYCGeoClient error" do
-        lambda do
+        expect(lambda do
           @client.address('13','crosby','manhattan')
-        end.should raise_error(NYCGeoClient::Error)
+        end).to raise_error(NYCGeoClient::Error)
       end
 
       it "should return the status and body" do
         begin
           @client.address('13','crosby','manhattan')
         rescue NYCGeoClient::Error => ex
-          ex.status.should be == status
-          ex.message.split(": ").should be == [
-            "GET https://api.cityofnewyork.us/geoclient/v1/address.json?app_id=foo&app_key=bar&houseNumber=13&street=crosby&borough=manhattan",
-            "#{status}",
-            "some message"
-          ]
+          expect(ex.status).to eq status
+          parts = ex.message.split(": ")
+          expect(parts[0]).to match /GET https:\/\/api.cityofnewyork.us\/geoclient\/v1\/address.json/
+          expect(parts[1]).to eq "#{status}"
+          expect(parts[2]).to eq "some message"
         end
       end
     end

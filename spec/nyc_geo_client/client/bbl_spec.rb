@@ -25,19 +25,19 @@ describe NYCGeoClient::Client do
 
         it "should get the correct resource" do
           @client.bbl('manhattan', '00233', '0004')
-          a_get("bbl.#{format}").
+          expect(a_get("bbl.#{format}").
             with(query: {
               app_id:  @client.app_id,
               app_key: @client.app_key,
               borough: 'manhattan',
               block:   '00233',
               lot:     '0004',
-            }).should have_been_made
+            })).to have_been_made
         end
 
         it "should return the bbl info" do
           data = @client.bbl('manhattan', '00233', '0004')
-          data.keys.should be == ["bbl"]
+          expect(data.keys).to eq ["bbl"]
         end
       end
     end

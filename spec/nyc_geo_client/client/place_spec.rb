@@ -24,18 +24,18 @@ describe NYCGeoClient::Client do
 
         it "should get the correct resource" do
           @client.place('empire state building', 'manhattan')
-          a_get("place.#{format}").
+          expect(a_get("place.#{format}").
             with(query: {
               app_id:  @client.app_id,
               app_key: @client.app_key,
               name:    'empire state building',
               borough: 'manhattan'
-            }).should have_been_made
+            })).to have_been_made
         end
 
         it "should return the place info" do
           data = @client.place('empire state building', 'manhattan')
-          data.keys.should be == ["place"]
+          expect(data.keys).to eq ["place"]
         end
       end
     end

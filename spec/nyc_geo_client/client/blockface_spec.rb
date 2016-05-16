@@ -27,7 +27,7 @@ describe NYCGeoClient::Client do
 
         it "should get the correct resource" do
           @client.blockface('34 st', 'fifth ave', 'sixth ave', 'manhattan', {compassDirection: 'north'})
-          a_get("blockface.#{format}").
+          expect(a_get("blockface.#{format}").
             with(query: {
               app_id:  @client.app_id,
               app_key: @client.app_key,
@@ -36,12 +36,12 @@ describe NYCGeoClient::Client do
               crossStreetTwo: 'sixth ave',
               borough: 'manhattan',
               compassDirection: 'north'
-            }).should have_been_made
+            })).to have_been_made
         end
 
         it "should return the blockface info" do
           data = @client.blockface('34 st', 'fifth ave', 'sixth ave', 'manhattan', {compassDirection: 'north'})
-          data.keys.should be == ["blockface"]
+          expect(data.keys).to eq ["blockface"]
         end
       end
     end

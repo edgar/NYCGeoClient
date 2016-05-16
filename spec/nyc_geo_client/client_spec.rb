@@ -5,7 +5,7 @@ describe NYCGeoClient::Client do
     client = NYCGeoClient::Client.new
     endpoint = URI.parse(client.endpoint)
     connection = client.send(:connection).build_url(nil).to_s
-    (connection + '/').should == endpoint.to_s
+    expect(connection).to eq endpoint.to_s
   end
 
 end
