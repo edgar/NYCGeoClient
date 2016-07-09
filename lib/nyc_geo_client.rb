@@ -20,7 +20,7 @@ module NYCGeoClient
   end
 
   # Delegate to NYCGeoClient::Client
-  def self.respond_to?(method)
+  def self.respond_to?(method, include_all=false)
     return client.respond_to?(method) || super
   end
 end
