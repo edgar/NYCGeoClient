@@ -3,9 +3,9 @@ require File.expand_path('../lib/nyc_geo_client/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake'
-  gem.add_development_dependency('rspec', '~> 3.4.0')
-  gem.add_development_dependency('webmock', '~> 2.0.2')
-  gem.add_development_dependency('yard', '~> 0.8.7.6')
+  gem.add_development_dependency('rspec', '~> 3.5.0')
+  gem.add_development_dependency('webmock', '~> 2.3.2')
+  gem.add_development_dependency('yard', '~> 0.9.8')
   gem.add_development_dependency('bluecloth', '~> 2.2.0')
 
   gem.add_runtime_dependency('faraday', '~> 0.9.2')
