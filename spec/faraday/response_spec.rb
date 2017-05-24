@@ -22,13 +22,13 @@ describe Faraday::Response do
 
       it "should raise a NYCGeoClient error" do
         expect(lambda do
-          @client.address('13','crosby','manhattan')
+          @client.address(house_number: '13', street: 'crosby', borough: 'manhattan')
         end).to raise_error(NYCGeoClient::Error)
       end
 
       it "should return the status and body" do
         begin
-          @client.address('13','crosby','manhattan')
+          @client.address(house_number: '13', street: 'crosby', borough: 'manhattan')
         rescue NYCGeoClient::Error => ex
           expect(ex.status).to eq status
           parts = ex.message.split(": ")

@@ -11,11 +11,12 @@ module NYCGeoClient
       # @example address information using a well-known place name
       #   NYCGeoClient.place('empire state building')
       # @format :json, :xml
-      def place(name, borough)
+      def place(name:, borough: nil, zip: nil)
         options = {
           name:    name,
-          borough: borough
-        }
+          borough: borough,
+          zip: zip
+        }.reject { |k, v| v.nil? }
         get(place_path, options)
       end
 

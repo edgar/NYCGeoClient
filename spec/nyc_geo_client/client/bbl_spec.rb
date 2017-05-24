@@ -24,7 +24,7 @@ describe NYCGeoClient::Client do
         end
 
         it "should get the correct resource" do
-          @client.bbl('manhattan', '00233', '0004')
+          @client.bbl(borough: 'manhattan', block: '00233', lot: '0004')
           expect(a_get("bbl.#{format}").
             with(query: {
               app_id:  @client.app_id,
@@ -36,7 +36,7 @@ describe NYCGeoClient::Client do
         end
 
         it "should return the bbl info" do
-          data = @client.bbl('manhattan', '00233', '0004')
+          data = @client.bbl(borough: 'manhattan', block: '00233', lot: '0004')
           expect(data.keys).to eq ["bbl"]
         end
       end

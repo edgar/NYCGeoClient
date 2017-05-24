@@ -15,12 +15,14 @@ module NYCGeoClient
       # @example information about a segment defined by an on street between two cross-streets
       #   NYCGeoClient.blockface('34 st', 'fifht ave', 'manhattan')
       # @format :json, :xml
-      def intersection(cross_street_one, cross_street_two, borough, extra = {})
+      def intersection(cross_street_one:, cross_street_two:, borough:, borough_cross_street_two: nil, compass_direction: nil)
         options = {
           crossStreetOne: cross_street_one,
           crossStreetTwo: cross_street_two,
-          borough: borough
-        }.merge(extra)
+          borough: borough,
+          boroughCrossStreetTwo: borough_cross_street_two,
+          compassDirection: compass_direction
+        }.reject { |k, v| v.nil? }
         get(intersection_path, options)
       end
 

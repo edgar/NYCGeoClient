@@ -15,12 +15,13 @@ module NYCGeoClient
       # @example block and property level information about an address
       #   NYCGeoClient.address('13', 'crosby', 'manhattan')
       # @format :json, :xml
-      def address(house_number, street, borough)
+      def address(house_number:, street:, borough: nil, zip: nil)
         options = {
           houseNumber: house_number,
           street: street,
-          borough: borough
-        }
+          borough: borough,
+          zip: zip
+        }.reject { |k, v| v.nil? }
         get(address_path, options)
       end
 

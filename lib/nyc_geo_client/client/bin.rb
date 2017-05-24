@@ -10,7 +10,7 @@ module NYCGeoClient
       # @example property level information about a building
       #   NYCGeoClient.bin('1003041')
       # @format :json, :xml
-      def bin(bin)
+      def bin(bin:)
         options = {
           bin: bin
         }
