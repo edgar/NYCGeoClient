@@ -25,7 +25,13 @@ describe NYCGeoClient::Client do
         end
 
         it "should get the correct resource" do
-          @client.intersection('34 st', 'fifth ave', 'manhattan', {compassDirection: 'north'})
+          @client.intersection(
+            cross_street_one: '34 st',
+            cross_street_two: 'fifth ave',
+            borough: 'manhattan',
+            compass_direction: 'north'
+          )
+
           expect(a_get("intersection.#{format}").
             with(query: {
               app_id:  @client.app_id,
@@ -38,7 +44,13 @@ describe NYCGeoClient::Client do
         end
 
         it "should return the intersection info" do
-          data = @client.intersection('34 st', 'fifth ave', 'manhattan', {compassDirection: 'north'})
+          data = @client.intersection(
+            cross_street_one: '34 st',
+            cross_street_two: 'fifth ave',
+            borough: 'manhattan',
+            compass_direction: 'north'
+          )
+
           expect(data.keys).to eq ["intersection"]
         end
       end

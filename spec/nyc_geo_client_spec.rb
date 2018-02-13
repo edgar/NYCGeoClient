@@ -19,7 +19,7 @@ describe NYCGeoClient do
       end
 
     it "should get the correct resource" do
-      NYCGeoClient.address('13', 'crosby', 'manhattan')
+      NYCGeoClient.address(house_number: '13', street: 'crosby', borough: 'manhattan')
       expect(a_get("address.json").
         with(query: {
           houseNumber: '13',
@@ -29,7 +29,17 @@ describe NYCGeoClient do
     end
 
      it "should return the same results as a client" do
-       expect(NYCGeoClient.address('13', 'crosby', 'manhattan')).to eq NYCGeoClient::Client.new.address('13', 'crosby', 'manhattan')
+      expect(
+        NYCGeoClient.address(
+          house_number: '13',
+          street: 'crosby',
+          borough: 'manhattan'
+        )
+      ).to eq NYCGeoClient::Client.new.address(
+        house_number: '13',
+        street: 'crosby',
+        borough: 'manhattan'
+      )
      end
 
    end

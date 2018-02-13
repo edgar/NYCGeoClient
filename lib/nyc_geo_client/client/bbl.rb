@@ -12,7 +12,7 @@ module NYCGeoClient
       # @example property level information about a tax lot
       #   NYCGeoClient.bbl('manhattan','00233', '0004')
       # @format :json, :xml
-      def bbl(borough, block, lot)
+      def bbl(borough:, block:, lot:)
         options = {
           block:   block,
           lot:     lot,

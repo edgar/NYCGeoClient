@@ -17,13 +17,16 @@ module NYCGeoClient
       # @example information about a segment defined by an on street between two cross-streets
       #   NYCGeoClient.blockface('34 st', 'fifht ave', 'sixth ave', 'manhattan')
       # @format :json, :xml
-      def blockface(on_street, cross_street_one, cross_street_two, borough, extra = {})
+      def blockface(on_street:, cross_street_one:, cross_street_two:, borough:, borough_cross_street_one: nil, borough_cross_street_two: nil, compass_direction: nil)
         options = {
           onStreet:    on_street,
           crossStreetOne: cross_street_one,
           crossStreetTwo: cross_street_two,
-          borough: borough
-        }.merge(extra)
+          borough: borough,
+          boroughCrossStreetOne: borough_cross_street_one,
+          boroughCrossStreetTwo: borough_cross_street_two,
+          compassDirection: compass_direction
+        }.reject { |k, v| v.nil? }
         get(blockface_path, options)
       end
 

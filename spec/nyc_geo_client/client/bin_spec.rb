@@ -22,7 +22,7 @@ describe NYCGeoClient::Client do
         end
 
         it "should get the correct resource" do
-          @client.bin('1003041')
+          @client.bin(bin: '1003041')
           expect(a_get("bin.#{format}").
             with(query: {
               app_id:  @client.app_id,
@@ -32,7 +32,7 @@ describe NYCGeoClient::Client do
         end
 
         it "should return the bin info" do
-          data = @client.bin('1003041')
+          data = @client.bin(bin: '1003041')
           expect(data.keys).to eq ["bin"]
         end
       end

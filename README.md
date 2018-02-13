@@ -26,22 +26,31 @@ Or install it yourself as:
     client = NYCGeoClient::Client.new(app_id: 'ID', app_key: 'KEY')
 
     # get block and property level information about an address
-    client.address('13', 'crosby', 'manhattan')
+    client.address(house_number: '13', street: 'crosby', borough: 'manhattan')
 
     # property level information about a tax lot
-    client.bbl('manhattan', '00233', '0004')
+    client.bbl(borough: 'manhattan', block: '00233', lot: '0004')
 
     # get property level information about a building
-    client.bin('1003041')
+    client.bin(bin: '1003041')
 
     # get information about a segment defined by an on street between two cross-streets
-    client.blockface('34 st', 'fifth ave', 'sixth ave', 'manhattan')
+    client.blockface(
+        on_street: '34 st',
+        cross_street_one: 'fifth ave',
+        cross_street_two: 'sixth ave',
+        borough: 'manhattan'
+    )
 
     # get information about a point defined by two cross streets
-    client.intersection('34 st', 'fifth ave', 'manhattan')
+    client.intersection(
+        cross_street_one: '34 st',
+        cross_street_two: 'fifth ave',
+        borough: 'manhattan'
+    )
 
     # get address information using a well-known place name
-    client.place('empire state building', 'manhattan')
+    client.place(name: 'empire state building', borough: 'manhattan')
 
 
 For more information about the data returned by every method please check the specs folder
@@ -69,15 +78,14 @@ For instance:
     require 'typhoeus/adapters/faraday' # You will need the typhoeus gem
 
     client = NYCGeoClient.client(adapter: :typhoeus, user_agent: "foobar v1", debug: true, app_id: 'foo', app_key: 'bar')
-    client.address('13','crosby','manhattan')
+    client.address(house_number: '13', street: 'crosby', borough: 'manhattan')
 
 ## Ruby versions supported
 
-* 1.9.3
-* 2.0.0
 * 2.1.0
 * 2.2.5
 * 2.3.1
+* 2.4.0
 
 Check the [.travis.yml](.travis.yml) to see the current supported ruby versions.
 
