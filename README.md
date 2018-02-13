@@ -82,10 +82,11 @@ For instance:
 
 ## Ruby versions supported
 
-* 2.1.0
-* 2.2.5
-* 2.3.1
-* 2.4.0
+* 2.1
+* 2.2
+* 2.3
+* 2.4
+* 2.5
 
 Check the [.travis.yml](.travis.yml) to see the current supported ruby versions.
 
