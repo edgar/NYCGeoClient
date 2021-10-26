@@ -25,15 +25,14 @@ module NYCGeoClient
 
     # Perform an HTTP request
     def request(method, path, options, raw=false)
-      new_options = access_params.merge(options)
       response = connection(raw).send(method) do |request|
         path = formatted_path(path)
         case method
         when :get, :delete
-          request.url(path, new_options)
+          request.url(path, options)
         when :post, :put
           request.path = path
-          request.body = new_options unless new_options.empty?
+          request.body = options unless options.empty?
         end
       end
       if raw
@@ -47,13 +46,6 @@ module NYCGeoClient
 
     def formatted_path(path)
       [path, format].compact.join('.')
-    end
-
-    def access_params
-      hash = {}
-      hash[:app_id] = app_id if app_id
-      hash[:app_key] = app_key if app_key
-      hash
     end
   end
 end

@@ -6,7 +6,7 @@ describe NYCGeoClient::Client do
     context ".new(:format => '#{format}')" do
 
       before do
-        @client = NYCGeoClient::Client.new(app_id: 'ID', app_key: 'KEY', format: format)
+        @client = NYCGeoClient::Client.new(subscription_key: 'KEY', format: format)
       end
 
       describe ".bin" do
@@ -14,8 +14,6 @@ describe NYCGeoClient::Client do
           stub_get("bin.#{format}").
             with(
               query: {
-                app_id:  @client.app_id,
-                app_key: @client.app_key,
                 bin:     '1003041',
               }).
             to_return(body: fixture("bin.#{format}"), headers: {content_type: "application/#{format}; charset=utf-8"})
@@ -25,8 +23,6 @@ describe NYCGeoClient::Client do
           @client.bin(bin: '1003041')
           expect(a_get("bin.#{format}").
             with(query: {
-              app_id:  @client.app_id,
-              app_key: @client.app_key,
               bin:     '1003041',
             })).to have_been_made
         end

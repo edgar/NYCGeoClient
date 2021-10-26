@@ -6,7 +6,7 @@ describe NYCGeoClient::Client do
     context ".new(:format => '#{format}')" do
 
       before do
-        @client = NYCGeoClient::Client.new(app_id: 'ID', app_key: 'KEY', format: format)
+        @client = NYCGeoClient::Client.new(subscription_key: 'KEY', format: format)
       end
 
       describe ".blockface" do
@@ -14,8 +14,6 @@ describe NYCGeoClient::Client do
           stub_get("blockface.#{format}").
             with(
               query: {
-                app_id:  @client.app_id,
-                app_key: @client.app_key,
                 onStreet: '34 st',
                 crossStreetOne: 'fifth ave',
                 crossStreetTwo: 'sixth ave',
@@ -36,8 +34,6 @@ describe NYCGeoClient::Client do
 
           expect(a_get("blockface.#{format}").
             with(query: {
-              app_id:  @client.app_id,
-              app_key: @client.app_key,
               onStreet: '34 st',
               crossStreetOne: 'fifth ave',
               crossStreetTwo: 'sixth ave',

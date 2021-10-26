@@ -7,8 +7,7 @@ module NYCGeoClient
     # An array of valid keys in the options hash when configuring a {NYCGeoClient::API}
     VALID_OPTIONS_KEYS = [
       :adapter,
-      :app_id,
-      :app_key,
+      :subscription_key,
       :endpoint,
       :format,
       :user_agent,
@@ -24,16 +23,13 @@ module NYCGeoClient
     # @note The default faraday adapter is Net::HTTP.
     DEFAULT_ADAPTER = Faraday.default_adapter
 
-    # By default, don't set an application ID
-    DEFAULT_APP_ID = nil
-
     # By default, don't set an application KEY
-    DEFAULT_APP_KEY = nil
+    DEFAULT_SUBSCRIPTION_KEY = nil
 
     # The endpoint that will be used to connect if none is set
     #
     # @note There is no reason to use any other endpoint at this time
-    DEFAULT_ENDPOINT = 'https://api.cityofnewyork.us/geoclient/v1/'.freeze
+    DEFAULT_ENDPOINT = 'https://api.nyc.gov/geo/geoclient/v1/'.freeze
 
     # The response format appended to the path and sent in the 'Accept' header if none is set
     #
@@ -71,14 +67,13 @@ module NYCGeoClient
 
     # Reset all configuration options to defaults
     def reset
-      self.adapter        = DEFAULT_ADAPTER
-      self.app_id         = DEFAULT_APP_ID
-      self.app_key        = DEFAULT_APP_KEY
-      self.endpoint       = DEFAULT_ENDPOINT
-      self.format         = DEFAULT_FORMAT
-      self.user_agent     = DEFAULT_USER_AGENT
-      self.proxy          = DEFAULT_PROXY
-      self.debug          = DEFAULT_DEBUG
+      self.adapter          = DEFAULT_ADAPTER
+      self.subscription_key = DEFAULT_SUBSCRIPTION_KEY
+      self.endpoint         = DEFAULT_ENDPOINT
+      self.format           = DEFAULT_FORMAT
+      self.user_agent       = DEFAULT_USER_AGENT
+      self.proxy            = DEFAULT_PROXY
+      self.debug            = DEFAULT_DEBUG
     end
   end
 end

@@ -6,7 +6,7 @@ describe NYCGeoClient::Client do
     context ".new(:format => '#{format}')" do
 
       before do
-        @client = NYCGeoClient::Client.new(app_id: 'ID', app_key: 'KEY', format: format)
+        @client = NYCGeoClient::Client.new(subscription_key: 'KEY', format: format)
       end
 
       describe ".address" do
@@ -15,8 +15,6 @@ describe NYCGeoClient::Client do
             stub_get("address.#{format}").
               with(
                 query: {
-                  app_id: @client.app_id,
-                  app_key: @client.app_key,
                   houseNumber: '13',
                   street: 'crosby',
                   borough: 'manhattan'
@@ -28,8 +26,6 @@ describe NYCGeoClient::Client do
             @client.address(house_number: '13', street: 'crosby', borough: 'manhattan')
             expect(a_get("address.#{format}").
               with(query: {
-                app_id: @client.app_id,
-                app_key: @client.app_key,
                 houseNumber: '13',
                 street: 'crosby',
                 borough: 'manhattan'
@@ -47,8 +43,6 @@ describe NYCGeoClient::Client do
             stub_get("address.#{format}").
               with(
                 query: {
-                  app_id: @client.app_id,
-                  app_key: @client.app_key,
                   houseNumber: '13',
                   street: 'crosby',
                   zip: '10013'
@@ -60,8 +54,6 @@ describe NYCGeoClient::Client do
             @client.address(house_number: '13', street: 'crosby', zip: '10013')
             expect(a_get("address.#{format}").
               with(query: {
-                app_id: @client.app_id,
-                app_key: @client.app_key,
                 houseNumber: '13',
                 street: 'crosby',
                 zip: '10013'
