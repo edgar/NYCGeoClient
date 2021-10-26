@@ -1,5 +1,5 @@
 # NYCGeoClient [![Build Status](https://travis-ci.org/edgar/NYCGeoClient.png?branch=master)](https://travis-ci.org/edgar/NYCGeoClient) [![Gem Version](https://badge.fury.io/rb/nyc_geo_client.svg)](http://badge.fury.io/rb/nyc_geo_client)
-A ruby gem for the NYC GeoClient API - https://developer.cityofnewyork.us/api/geoclient-api
+A ruby gem for the NYC GeoClient API - https://api-portal.nyc.gov/docs/services/geoclient/operations/geoclient
 
 ## Installation
 
@@ -16,14 +16,14 @@ Or install it yourself as:
     $ gem install nyc_geo_client
 
 
-*NOTE:* You will need to register an application with the [NYC Developer Portal](https://developer.cityofnewyork.us/), and make sure that you check off access to the Geoclient API for the application. Take note of the Application's ID and key.
+*NOTE:* You will need to register an application with the [NYC API Portal](https://api-portal.nyc.gov/), and make sure that you check off access to the Geoclient API for the application. Take note of the Application's subscription key.
 
 ## API Usage Examples
 
     require "rubygems"
     require "nyc_geo_client"
 
-    client = NYCGeoClient::Client.new(app_id: 'ID', app_key: 'KEY')
+    client = NYCGeoClient::Client.new(subscription_key: 'KEY')
 
     # get block and property level information about an address
     client.address(house_number: '13', street: 'crosby', borough: 'manhattan')
@@ -82,11 +82,10 @@ For instance:
 
 ## Ruby versions supported
 
-* 2.1
-* 2.2
-* 2.3
 * 2.4
 * 2.5
+* 2.6
+* 2.7
 
 Check the [.travis.yml](.travis.yml) to see the current supported ruby versions.
 
