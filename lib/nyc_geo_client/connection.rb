@@ -8,10 +8,14 @@ module NYCGeoClient
 
     def connection(raw=false)
       options = {
-        :headers => {'Accept' => "application/json; charset=utf-8", 'User-Agent' => user_agent},
-        :proxy => proxy,
-        :ssl => {:verify => false},
-        :url => endpoint,
+        headers: {
+          'Accept' => "application/json; charset=utf-8",
+          'User-Agent' => user_agent,
+          'Ocp-Apim-Subscription-Key' => subscription_key
+        },
+        proxy: proxy,
+        ssl: {verify: false},
+        url: endpoint
       }
 
       Faraday::Connection.new(options) do |connection|

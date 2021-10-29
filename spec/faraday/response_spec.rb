@@ -2,7 +2,7 @@ require File.expand_path('../../spec_helper', __FILE__)
 
 describe Faraday::Response do
   before do
-    @client = NYCGeoClient::Client.new(app_id: 'foo', app_key: 'bar')
+    @client = NYCGeoClient::Client.new(subscription_key: 'foo')
   end
 
   [403, 500, 503].each do |status|
@@ -11,8 +11,6 @@ describe Faraday::Response do
         stub_get("address.json").
           with(
             query: {
-              app_id: @client.app_id,
-              app_key: @client.app_key,
               houseNumber: '13',
               street: 'crosby',
               borough: 'manhattan'
@@ -32,7 +30,7 @@ describe Faraday::Response do
         rescue NYCGeoClient::Error => ex
           expect(ex.status).to eq status
           parts = ex.message.split(": ")
-          expect(parts[0]).to match /GET https:\/\/api.cityofnewyork.us\/geoclient\/v1\/address.json/
+          expect(parts[0]).to match /GET https:\/\/api.nyc.gov\/geo\/geoclient\/v1\/address.json/
           expect(parts[1]).to eq "#{status}"
           expect(parts[2]).to eq "some message"
         end

@@ -6,7 +6,7 @@ describe NYCGeoClient::Client do
     context ".new(:format => '#{format}')" do
 
       before do
-        @client = NYCGeoClient::Client.new(app_id: 'ID', app_key: 'KEY', format: format)
+        @client = NYCGeoClient::Client.new(subscription_key: 'KEY', format: format)
       end
 
       describe ".place" do
@@ -15,8 +15,6 @@ describe NYCGeoClient::Client do
             stub_get("place.#{format}").
               with(
                 query: {
-                  app_id:  @client.app_id,
-                  app_key: @client.app_key,
                   name:    'empire state building',
                   borough: 'manhattan'
                 }).
@@ -27,8 +25,6 @@ describe NYCGeoClient::Client do
             @client.place(name: 'empire state building', borough: 'manhattan')
             expect(a_get("place.#{format}").
               with(query: {
-                app_id:  @client.app_id,
-                app_key: @client.app_key,
                 name:    'empire state building',
                 borough: 'manhattan'
               })).to have_been_made
@@ -45,8 +41,6 @@ describe NYCGeoClient::Client do
             stub_get("place.#{format}").
               with(
                 query: {
-                  app_id:  @client.app_id,
-                  app_key: @client.app_key,
                   name: 'empire state building',
                   zip: '10118'
                 }).
@@ -57,8 +51,6 @@ describe NYCGeoClient::Client do
             @client.place(name: 'empire state building', zip: '10118')
             expect(a_get("place.#{format}").
               with(query: {
-                app_id:  @client.app_id,
-                app_key: @client.app_key,
                 name: 'empire state building',
                 zip: '10118'
               })).to have_been_made

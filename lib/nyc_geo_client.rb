@@ -14,9 +14,9 @@ module NYCGeoClient
   end
 
   # Delegate to NYCGeoClient::Client
-  def self.method_missing(method, *args, &block)
+  def self.method_missing(method, **kwargs, &block)
     return super unless client.respond_to?(method)
-    client.send(method, *args, &block)
+    client.public_send(method, **kwargs, &block)
   end
 
   # Delegate to NYCGeoClient::Client

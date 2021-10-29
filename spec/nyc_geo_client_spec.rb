@@ -114,5 +114,4 @@ describe NYCGeoClient do
       end
     end
   end
-
 end

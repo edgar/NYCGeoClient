@@ -30,8 +30,7 @@ describe NYCGeoClient::API do
 
       before do
         @configuration = {
-          :app_id => 'ID',
-          :app_key => 'KEY',
+          :subscription_key => 'KEY',
           :adapter => :typhoeus,
           :endpoint => 'http://tumblr.com/',
           :format => :xml,

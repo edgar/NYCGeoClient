@@ -26,5 +26,5 @@ end
 
 desc "Open an irb session preloaded with this library"
 task :console do
-  sh "irb -rubygems -I lib -r nyc_geo_client.rb"
+  sh "irb -r rubygems -I lib -r nyc_geo_client.rb"
 end
